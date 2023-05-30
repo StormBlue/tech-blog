@@ -1,12 +1,16 @@
-baseURL: "https://examplesite.com/"
-title: ExampleSite
-paginate: 5
+baseURL: "https://stormblue.github.io/tech-blog/"
+title: Dev Diary
 theme: PaperMod
 
-enableRobotsTXT: true
+enableEmoji: true # 允许使用 Emoji 表情，建议 true
+enableRobotsTXT: true # 允许爬虫抓取到搜索引擎，建议 true
+hasCJKLanguage: true # 自动检测是否包含 中文日文韩文 如果文章中使用了很多中文引号的话可以开启
+
 buildDrafts: false
 buildFuture: false
 buildExpired: false
+
+paginate: 15
 
 googleAnalytics: UA-123-45
 
@@ -16,9 +20,9 @@ minify:
 
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
-  title: ExampleSite
-  description: "ExampleSite description"
-  keywords: [Blog, Portfolio, PaperMod]
+  title: Dev Diary
+  description: "开发日记"
+  keywords: [Blog, Android, Vue, Unity3D]
   author: Me
   # author: ["Me", "You"] # multiple authors
   images: ["<link or path of image for opengraph, twitter-cards>"]
@@ -45,23 +49,23 @@ params:
   assets:
     # disableHLJS: true # to disable highlight.js
     # disableFingerprinting: true
-    favicon: "<link / abs url>"
-    favicon16x16: "<link / abs url>"
-    favicon32x32: "<link / abs url>"
-    apple_touch_icon: "<link / abs url>"
-    safari_pinned_tab: "<link / abs url>"
+    favicon: "./img/favicon.ico"
+    favicon16x16: "./img/favicon-16x16.png"
+    favicon32x32: "./img/favicon-32x32.png"
+    apple_touch_icon: "./img/apple-touch-icon.png"
+    safari_pinned_tab: "./img/apple-touch-icon.png"
 
   label:
     text: "Home"
-    icon: /apple-touch-icon.png
+    icon: ./img/apple-touch-icon.png
     iconHeight: 35
 
   # profile-mode
   profileMode:
     enabled: false # needs to be explicitly set
-    title: ExampleSite
+    title: Dev Diary
     subtitle: "This is subtitle"
-    imageUrl: "<img location>"
+    imageUrl: "./img"
     imageWidth: 120
     imageHeight: 120
     imageTitle: my image
@@ -73,7 +77,7 @@ params:
 
   # home-info mode
   homeInfoParams:
-    Title: "Hi there \U0001F44B"
+    Title: "Hi there \U0001f30a"
     Content: Welcome to my blog
 
   socialIcons:

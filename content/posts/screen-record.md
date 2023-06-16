@@ -3,7 +3,7 @@ title: "录屏软件"
 date: 2023-05-23T12:04:29+08:00
 tags:
   - 通用技术
-draft: true
+draft: false
 ---
 ## 班迪录屏
 ### 出处
